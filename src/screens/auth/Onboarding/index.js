@@ -3,7 +3,7 @@ import { View, Text, Image } from "react-native";
 import styles from "./styles";
 import Button from "../../../components/Button";
 
-const Onboarding = () => {
+const Onboarding = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={{ flex: 1 }}>
@@ -20,8 +20,8 @@ const Onboarding = () => {
           productivity.
         </Text>
 
-        <Button onPress={() => {}}>Log in</Button>
-        <Button type={"blue"} onPress={() => {}}>
+        <Button onPress={() => navigation.navigate("Signin")}>Log in</Button>
+        <Button type={"blue"} o onPress={() => navigation.navigate("Signup")}>
           Get Started
         </Button>
       </View>
