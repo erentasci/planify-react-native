@@ -16,6 +16,19 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: colors.purple,
   },
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 20,
+  },
+  agreeText: {
+    color: colors.grey,
+    fontSize: 12,
+    marginLeft: 8,
+  },
+  link: {
+    textDecorationLine: "underline",
+  },
 });
 
 export default styles;
